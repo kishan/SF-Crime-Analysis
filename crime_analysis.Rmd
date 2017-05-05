@@ -1,0 +1,30 @@
+
+**Organization, Themes, and HTML Output**
+
+```{r, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(forcats)
+library(devtools)
+library(ggforce)
+library(gridExtra)
+kspatel_315_theme <-  theme_bw() + # White background, black and white theme
+  theme(axis.text = element_text(size = 12, color = "firebrick3"),
+        text = element_text(size = 14, face = "bold", color = "dodgerblue4"))
+
+#  Colorblind-friendly color pallette
+my_colors <- c("#000000", "#56B4E9", "#E69F00", "#F0E442", "#009E73", "#0072B2", 
+               "#D55E00", "#CC7947")
+```
+
+
+```{r, warning = F, message = F}
+crime <- read_csv("https://raw.githubusercontent.com/kishan/SF-Crime-Analysis/master/crime.csv")
+```
+
+```{r, warning = F, message = F}
+
+```
+
+```{r, warning = F, message = F}
+
+```
